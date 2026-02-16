@@ -17,12 +17,7 @@ build:
       - pip install uv
     post_install:
       # Install dependencies with 'docs' dependency group
-      # - uv pip install .[docs]
-      - uv pip install -r pyproject.toml
-      # Using insiders versions of mkdocs-material & mkdocstrings
-      - uv pip uninstall mkdocs-material # mkdocstrings mkdocstrings-python
-      - uv pip install mkdocstrings mkdocstrings-python
-      - uv pip install mkdocs-jupyter # This is bugged, I enforced it manually, let's see if it works
+      - uv pip install .[docs]
 
 mkdocs:
   configuration: mkdocs.yml

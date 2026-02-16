@@ -11,11 +11,6 @@ nav:
     - likelihood: api/likelihood.md
     - plotting: api/plotting.md
     - utils: api/utils.md
-  # #- Theory:
-  # #  - theory/index.md
-  # #  - Bayesian inference: theory/bayesian_inference.md
-  # #  - Instruments modelling: theory/instrument.md
-  # #  - Background modelling: theory/background.md
   - Examples:
     - Quickstart: examples/quickstart.ipynb
     # - Inference: examples/inference.ipynb
@@ -44,5 +39,3 @@ plugins:
             show_symbol_type_toc: true
             modernize_annotations: true
   - typeset
-
-  # - autorefs
