@@ -17,23 +17,7 @@ build:
       - pip install uv
     post_install:
       # Install dependencies with 'docs' dependency group
-      - uv pip install -r pyproject.toml
-      - uv pip install mkdocs-material mkdocstrings mkdocstrings-python
-      # - uv pip install mkdocs-autorefs
-      - uv pip install mkdocs-jupyter # This is bugged, I enforced it manually, let's see if it works
-
-  # apt_packages:
-  #   - libcairo2-dev
-  #   - libfreetype6-dev
-  #   - libffi-dev
-  #   - libjpeg-dev
-  #   - libpng-dev
-  #   - libz-dev
-  #   - pngquant
+      - uv pip install .[docs]
 
 mkdocs:
   configuration: mkdocs.yml
-
-# If using Sphinx, optionally build your docs in additional formats such as PDF
-formats:
-  - pdf

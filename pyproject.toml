@@ -25,6 +25,13 @@ dependencies = [
     "healpy"
 ]
 
+[project.optional-dependencies]
+docs = [
+  "mkdocs-material",
+  "mkdocstrings[python]",
+  "mkdocs-jupyter",
+]
+
 [tool.setuptools]
 platforms = ["any"]
 
