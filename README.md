@@ -4,10 +4,12 @@
 
 `photXclus` is a Python package for joint Bayesian inference of redshift and richness of X-ray (or otherwise) detected clusters and groups of galaxies using galaxy photometric redshifts. 
 
-Documentation : https://photXclus.readthedocs.io/en/latest/
+Documentation : [https://photXclus.readthedocs.io/en/latest/](https://photXclus.readthedocs.io/en/latest/)
+
+Repository : [https://codeberg.org/fsarron/photXclus](https://codeberg.org/fsarron/photXclus)
 
 > [!IMPORTANT]  
-> **photXclus development and hosting happens on Codeberg**, a non-profit community-led organization. You can find photXclus at [https://codeberg.org/fsarron/photXclus](https://codeberg.org/fsarron/photXclus). 
+> **photXclus development and hosting happens on Codeberg**, a non-profit community-led organization. 
 >
 > The GitHub repo is a mirror for convenience and visibility. You may consider moving your open-source academic projects to Codeberg.
 
