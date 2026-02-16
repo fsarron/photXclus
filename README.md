@@ -7,9 +7,7 @@
 Documentation : https://photXclus.readthedocs.io/en/latest/
 
 > [!IMPORTANT]  
-> **photXclus development and hosting happens on Codeberg**, a non-profit community-led organization that aims to help free and open source projects prosper. 
->
-> You can find photXclus at [https://codeberg.org/fsarron/photXclus](https://codeberg.org/fsarron/photXclus). 
+> **photXclus development and hosting happens on Codeberg**, a non-profit community-led organization. You can find photXclus at [https://codeberg.org/fsarron/photXclus](https://codeberg.org/fsarron/photXclus). 
 >
 > The GitHub repo is a mirror for convenience and visibility. You may consider moving your open-source academic projects to Codeberg.
 
