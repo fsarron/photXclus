@@ -1,0 +1,48 @@
+site_name: photXclus
+repo_url: https://codeberg.org/fsarron/photXclus
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - API: 
+    - data: api/data.md
+    - inference: api/inference.md
+    - model: api/model.md
+    - likelihood: api/likelihood.md
+    - plotting: api/plotting.md
+    - utils: api/utils.md
+  # #- Theory:
+  # #  - theory/index.md
+  # #  - Bayesian inference: theory/bayesian_inference.md
+  # #  - Instruments modelling: theory/instrument.md
+  # #  - Background modelling: theory/background.md
+  - Examples:
+    - Quickstart: examples/quickstart.ipynb
+    # - Inference: examples/inference.ipynb
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: blue
+    accent: deep orange
+  features:
+    - navigation.indexes
+    - content.code.copy
+plugins:
+  - search
+  - mkdocs-jupyter:
+      theme: dark
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            members_order: alphabetical
+            docstring_section_style: table
+            docstring_style: numpy
+            show_symbol_type_heading: true
+            show_symbol_type_toc: true
+            modernize_annotations: true
+  - typeset
+
+  # - autorefs

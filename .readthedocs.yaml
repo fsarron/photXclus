@@ -1,0 +1,39 @@
+# .readthedocs.yaml
+# Read the Docs configuration file
+# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+
+# Required
+version: 2
+
+# Set the version of Python and other tools you might need
+build:
+  os: ubuntu-22.04
+  tools:
+    python: "3.11"
+  # These packages are needed to build docs with image optimization
+  jobs:
+    post_create_environment:
+      # Install uv
+      - pip install uv
+    post_install:
+      # Install dependencies with 'docs' dependency group
+      - uv pip install -r pyproject.toml
+      - uv pip install mkdocs-material mkdocstrings mkdocstrings-python
+      # - uv pip install mkdocs-autorefs
+      - uv pip install mkdocs-jupyter # This is bugged, I enforced it manually, let's see if it works
+
+  # apt_packages:
+  #   - libcairo2-dev
+  #   - libfreetype6-dev
+  #   - libffi-dev
+  #   - libjpeg-dev
+  #   - libpng-dev
+  #   - libz-dev
+  #   - pngquant
+
+mkdocs:
+  configuration: mkdocs.yml
+
+# If using Sphinx, optionally build your docs in additional formats such as PDF
+formats:
+  - pdf

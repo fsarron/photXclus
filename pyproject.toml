@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "photXclus"
+authors = [{name="Florian Sarron", email="florian.sarron@utoulouse.fr"}
+           ]
+license = {text = "GPLv3"}
+description = "A package for galaxy cluster joint redshift and richness Bayesian inference in photometric surveys"
+requires-python = ">=3.9,<3.12"
+version = "0.1.0"
+dependencies = [
+    "numpy<2",
+    "numba",
+    "emcee",
+    "zeus-mcmc",
+    "astropy",
+    "h5py",
+    "tqdm",
+    "scipy",
+    "matplotlib",
+    "corner",
+    "astro-datalab",
+    "healpy"
+]
+
+[tool.setuptools]
+platforms = ["any"]
+
+[tool.setuptools.packages]
+find = { where = ["."] }
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.urls]
+Source = "https://codeberg.org/fsarron/photXclus"
